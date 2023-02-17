@@ -1,0 +1,44 @@
+<androidx.preference.PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.preference.PreferenceCategory android:title="">
+        <androidx.preference.SwitchPreference
+            android:defaultValue="@string/pref_auto"
+            android:key="auto"
+            android:summary=""
+            android:title="Autostart" />
+        <androidx.preference.SeekBarPreference
+            android:defaultValue="@string/pref_delay"
+            android:key="delay"
+            android:max="60"
+            android:min="0"
+            android:summary="xs"
+            android:title="Delay (s) after trigger" />
+         <androidx.preference.SeekBarPreference
+            android:defaultValue="@string/pref_delayBtw"
+            android:key="delayBtw"
+            android:max="60"
+            android:min="0"
+            android:summary="xs"
+            android:title="Delay (s) btw srv stop and start" />
+        <androidx.preference.Preference
+            android:key="property"
+            android:persistent="false"
+            android:selectable="false"
+            android:summary=""
+            android:title="Property value">
+        </androidx.preference.Preference>
+    </androidx.preference.PreferenceCategory>
+    
+    <androidx.preference.PreferenceCategory android:title="About">
+        <androidx.preference.Preference
+            android:key="prefAbout"
+            android:persistent="false"
+            android:selectable="false"
+            android:summary="version vx"
+            android:title="LTErecover">
+        </androidx.preference.Preference>
+    </androidx.preference.PreferenceCategory>
+</androidx.preference.PreferenceScreen>
