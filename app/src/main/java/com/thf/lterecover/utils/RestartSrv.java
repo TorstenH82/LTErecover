@@ -19,8 +19,8 @@ public class RestartSrv {
             throws RestartSrvException {
 
         try {
-            Thread.sleep(delay * 1000);
-            
+            if (!force) Thread.sleep(delay * 1000);
+
             String netwType = getNetworkType(context);
             Log.d(TAG, "Current network type: " + netwType);
             if ("4G".equals(netwType) && !force) {
@@ -31,9 +31,9 @@ public class RestartSrv {
             Log.d(TAG, "service 'vendor.ril-daemon-mtk' stopped");
             Utils.execSuCommand(context, "stop vendor.epdg_wod");
             Log.d(TAG, "service 'vendor.epdg_wod' stopped");
-            
+
             Thread.sleep(delayBtw * 1000);
-             
+
             Utils.execSuCommand(context, "start vendor.ril-daemon-mtk");
             Log.d(TAG, "service 'vendor.ril-daemon-mtk' started");
             Utils.execSuCommand(context, "start vendor.epdg_wod");

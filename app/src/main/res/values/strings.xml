@@ -3,7 +3,7 @@
     <string name="su">su @#zxcvbnmasdfghjklqwertyuiop1234567890,.</string>
     <string name="propName">sys.qb.startapp_onresume</string>
     <string name="pref_auto">false</string>
-    <string name="pref_delay">0</string>
+    <string name="pref_delay">15</string>
     <string name="pref_delayBtw">3</string>
     
     <string name="AppSwitcherPackage">com.thf.AppSwitcher</string>

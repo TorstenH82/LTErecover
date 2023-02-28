@@ -164,7 +164,7 @@ public class MainActivity extends AppCompatActivity {
                 auto.setChecked(false);
                 auto.setEnabled(false);
                 auto.setSelectable(false);
-                auto.setSummary("Please enable 'Start LTErevover' in AppSwitcher settings");
+                auto.setSummary("Please enable 'Start LTErecover' in AppSwitcher settings");
             }
             
             
